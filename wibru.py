@@ -25,11 +25,6 @@ def connect_wifi(ssid, password, verbose=False):
             print("Connection failed. Error message:")
             print(error)
         
-        if verbose:
-            print("Deleting failed connection...")
-        #delete_command = f"sudo nmcli connection delete '{ssid}'"
-        #run_command(delete_command)
-        
         return False
 
 def main():
